@@ -1,0 +1,232 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+
+/* The left side (img and writing) */
+.left img {
+  height: 70px;
+  margin: 11px 19px;
+  text-align: left;
+}
+
+/* The mid section (navbar) */
+.navbar {
+  position: relative;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar ul li a {
+  padding: 9px 34px;
+  border-radius: 16px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.container::before {
+  background-color: black;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* The right side (search tab and shit) */
+.right {
+  margin-left: 339px;
+}
+.right form {
+  padding-bottom: 4px;
+}
+.right {
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* The section below the navbar with the photo and main heading. */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 535px;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./top1.jpeg) no-repeat center center/cover;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.8;
+  height: 639px;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Utility classes */
+/* heading1 is h-primary */
+.heading1 {
+  font-size: 2.9rem;
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.btn {
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  background-color: burlywood;
+  padding: 1px 9px;
+  cursor: pointer;
+}
+.heading2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* The second part after the intro. (Shopping section) */
+
+#shopping {
+  display: flex;
+  position: relative;
+}
+#second {
+  height: 625px;
+}
+#second::before {
+  content: "";
+  position: absolute;
+  height: 625px;
+  width: 100%;
+  background: url(./fall.jpeg) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+#shopping .box {
+  box-sizing: border-box;
+  border: 3px solid grey;
+  margin: 17px 5px;
+  padding: 37px 14px;
+  cursor: pointer;
+  background-color: rgb(176 195 186);
+  border-radius: 10px;
+}
+
+#shopping .box img {
+  height: 175px;
+  display: block;
+  margin: auto;
+}
+
+/* The third part of online delivery section */
+#delivery {
+  position: relative;
+}
+#delivery::before {
+  content: "";
+  position: absolute;
+  background: url(./phone.jpeg) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+#delivery1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding-bottom: 30px;
+}
+#delivery1 input,
+#delivery1 textarea {
+  width: 100%;
+  font-size: 0.9rem;
+  border-radius: 9px;
+  font-size: 0.9rem;
+}
+
+#delivery label {
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* The fourth part for now it is contact / about us section but will change it and put it in the fourth part aiight? */
+#third {
+  height: 735px;
+}
+#third::before {
+  content: "";
+  position: absolute;
+  height: 735px;
+  width: 100%;
+  background: url(./mee.jpeg) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.7;
+}
+#clients-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients-sec img {
+  height: 100px;
+  width: 100px;
+  padding: 4px 28px;
+}
+
+/* The footer part. */
+footer {
+  background: linear-gradient(grey, black);
+  color: white;
+  text-align: center;
+}
